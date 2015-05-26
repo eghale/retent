@@ -27,6 +27,38 @@
 // simple-todos.js
 Tents = new Mongo.Collection("tents");
 
+Tents.attachSchema(new SimpleSchema({
+  title: {
+    type: String,
+    label: "What have you got? (e.g. tent, chair, sun shade etc.)",
+    max: 200
+  },
+  colour: {
+    type: String,
+    label: "Colour",
+    max: 200
+  },
+  capacity: {
+    type: Number,
+    label: "Capacity",
+    min: 0
+  },
+  damage: {
+    type: String,
+    label: "Is there any dirt or damage?",
+    max: 500
+  }
+}));
+
+Tents.allow({
+  'insert': function (userId, tent) {
+    console.log('insert userId, tent', userId, tent);
+    /* user and doc checks ,
+     return true to allow insert */
+    return true;
+  }
+});
+
 if (Meteor.isClient) {
   // This code only runs on the client
   Meteor.subscribe("tents");
@@ -171,3 +203,17 @@ if (Meteor.isServer) {
     });
   });
 }
+
+var d = 5;
+
+var add = function(d, t) {
+  d = 10;
+  var inner = "I'm safe inside!";
+  //return d + t;
+  return inner;
+}
+
+add(3, 4);
+
+
+// d == 10
