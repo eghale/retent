@@ -160,9 +160,10 @@ Template.listsShow.events({
     event.preventDefault();
 
     var $input = $(event.target).find('[type=text]');
-    if (! $input.val())
-      return;
-    
+    if (! $input.val());
+
+    return false;
+
     Tents.insert({
       listId: this._id,
       text: $input.val(),

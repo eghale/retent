@@ -1,4 +1,8 @@
-<template name="signin">
+<template name="insertTentForm">
+  {{> quickForm collection="Tents" id="insertTentForm" type="insert"}}
+</template>
+
+<template name="addItem">
   <div class="page auth">
     <nav>
       <div class="nav-group">
@@ -8,10 +12,12 @@
 
     <div class="content-scrollable">
       <div class="wrapper-auth">
-        <h1 class="title-auth">Sign In.</h1>
-        <p class="subtitle-auth" >Signing in allows you to view private lists</p>
+        <h1 class="title-auth">Add item</h1>
+        <p class="subtitle-auth" >Add a tent, chair, gazebo, sunshade or something else entirely!</p>
 
-        <form>
+        {{> insertTentForm }}
+
+       <!-- <form>
           {{#if errorMessages}}
             <div class="list-errors">
               {{#each errorMessages}}
@@ -31,12 +37,10 @@
           </div>
 
           <button type="submit" class="btn-primary">Sign in</button>
-        </form>
+        </form> -->
       </div>
 
-      <a href="{{pathFor 'join'}}" class="link-auth-alt">Need an account? Join Now.</a><br>
-      <a href="{{pathFor 'howto'}}">How to</a><br>
-        <a href="{{pathFor 'tents-additem'}}">Add an item</a>
+      <a href="{{pathFor 'join'}}" class="link-auth-alt">Need an account? Join Now.</a>
     </div>
   </div>
 </template>
