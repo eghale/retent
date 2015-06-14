@@ -10,8 +10,16 @@ Meteor.publish('privateLists', function() {
   }
 });
 
+Meteor.publish('items', function() {
+  //check(listId, String);
+
+  return Items.find();
+});
+
+/*
 Meteor.publish('tents', function(listId) {
   check(listId, String);
 
   return Tents.find({listId: listId});
 });
+*/
