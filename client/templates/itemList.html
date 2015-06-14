@@ -1,0 +1,27 @@
+<template name="itemList">
+  <div class="page lists-show">
+      Items List
+      <div class="content-scrollable list-items">
+        {{#if tentsReady}}
+          {{#with _id}} {{! Establish new data context with only the '_id'
+                          field. This way, when the 'incompleteCount' field
+                          changes, we don't re-render the list contents }}
+            {{#each tents this}}
+              {{> tentsItem}}
+            {{else}}
+                <div class="wrapper-message">
+                    <div class="title-message">No items here yet</div>
+                    <a href="{{pathFor 'addItem'}}">Add an item</a>
+                    <div class="subtitle-message">Add new tents, chairs, sunshades or gazebos using the link above</div><br><br>
+                </div>
+            {{/each}}
+          {{/with}}
+        {{else}}
+            <div class="wrapper-message">
+                <div class="title-message">Loading tents...</div>
+            </div>
+        {{/if}}
+      </div>
+
+  </div>
+</template>

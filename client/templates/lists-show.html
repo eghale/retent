@@ -59,8 +59,9 @@
             {{> tentsItem}}
           {{else}}
             <div class="wrapper-message">
-              <div class="title-message">No items here yet (add a tent!)</div>
-              <div class="subtitle-message">Add new tents, chairs, sunshades or gazebos using the field above</div>
+              <div class="title-message">No items here yet</div>
+                <a href="{{pathFor 'addItem'}}">Add an item</a>
+              <div class="subtitle-message">Add new tents, chairs, sunshades or gazebos using the link above</div><br><br>
             </div>
           {{/each}}
         {{/with}}

@@ -1,5 +1,19 @@
+<template name="oldinsertTentForm">
+  {{> quickForm collection="Tents" id="oldinsertTentForm" type="insert"}}
+</template>
+
 <template name="insertTentForm">
-  {{> quickForm collection="Tents" id="insertTentForm" type="insert"}}
+    {{#autoForm collection="Tents" id="insertTentForm" type="insert"}}
+        <fieldset>
+            <div align="left">
+            {{> afQuickField name='title'}} <br>
+            {{> afQuickField name='colour'}} <br>
+            {{> afQuickField name='capacity'}} <br>
+            {{> afQuickField name='damage'}} <br>
+            </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Insert</button>
+    {{/autoForm}}
 </template>
 
 <template name="addItem">
