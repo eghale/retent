@@ -37,12 +37,12 @@ Template.listsShow.helpers({
     return Session.get(EDITING_KEY);
   },
 
-  tentsReady: function() {
-    return Router.current().tentsHandle.ready();
+  itemsReady: function() {
+    return Router.current().itemsHandle.ready();
   },
 
-  tents: function(listId) {
-    return Tents.find({listId: listId}, {sort: {createdAt : -1}});
+  items: function(listId) {
+    return Items.find({listId: listId}, {sort: {createdAt : -1}});
   }
 });
 
@@ -68,8 +68,8 @@ var deleteList = function(list) {
   var message = "Are you sure you want to delete the list " + list.name + "?";
   if (confirm(message)) {
     // we must remove each item individually from the client
-    Tents.find({listId: list._id}).forEach(function(tent) {
-      Tents.remove(tent._id);
+    Items.find({listId: list._id}).forEach(function(item) {
+      Items.remove(tent._id);
     });
     Lists.remove(list._id);
 
@@ -153,10 +153,10 @@ Template.listsShow.events({
   },
   
   'click .js-tent-add': function(event, template) {
-    template.$('.js-tent-new input').focus();
+    template.$('.js-item-new input').focus();
   },
 
-  'submit .js-tent-new': function(event) {
+  'submit .js-item-new': function(event) {
     event.preventDefault();
 
     var $input = $(event.target).find('[type=text]');
@@ -164,12 +164,13 @@ Template.listsShow.events({
 
     return false;
 
-    Tents.insert({
+    Items.insert({
       listId: this._id,
       text: $input.val(),
       checked: false,
       createdAt: new Date()
     });
+
     Lists.update(this._id, {$inc: {incompleteCount: 1}});
     $input.val('');
   }

@@ -1,6 +1,6 @@
-var EDITING_KEY = 'EDITING_TENT_ID';
+var EDITING_KEY = 'EDITING_ITEM_ID';
 
-Template.tentsItem.helpers({
+Template.items.helpers({
   checkedClass: function() {
     return this.checked && 'checked';
   },
@@ -9,10 +9,10 @@ Template.tentsItem.helpers({
   }
 });
 
-Template.tentsItem.events({
+Template.items.events({
   'change [type=checkbox]': function(event) {
     var checked = $(event.target).is(':checked');
-    Tents.update(this._id, {$set: {checked: checked}});
+    Items.update(this._id, {$set: {checked: checked}});
     Lists.update(this.listId, {$inc: {incompleteCount: checked ? -1 : 1}});
   },
   
@@ -37,13 +37,13 @@ Template.tentsItem.events({
   // we don't flood the server with updates (handles the event at most once 
   // every 300ms)
   'keyup input[type=text]': _.throttle(function(event) {
-    Tents.update(this._id, {$set: {text: event.target.value}});
+    Items.update(this._id, {$set: {text: event.target.value}});
   }, 300),
   
   // handle mousedown otherwise the blur handler above will swallow the click
   // on iOS, we still require the click event so handle both
   'mousedown .js-delete-item, click .js-delete-item': function() {
-    Tents.remove(this._id);
+    Items.remove(this._id);
     if (! this.checked)
       Lists.update(this.listId, {$inc: {incompleteCount: -1}});
   }

@@ -3,12 +3,12 @@
  */
 Template.itemList.helpers ({
 
-    tents: function () {
-        return Tents.find({}, {sort: {createdAt: -1}});
+    items: function () {
+        return Items.find({}, {sort: {createdAt: -1}});
     },
 
-    tentsReady: function() {
+    itemsReady: function() {
         return true;
-        //return Router.current().tentsHandle.ready();
+        //return Router.current().itemsHandle.ready();
     }
 });

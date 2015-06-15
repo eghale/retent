@@ -46,17 +46,17 @@
 
 
 
-      <span class="icon-add js-tent-add"></span>
+      <span class="icon-add js-item-add"></span>
     </nav>
 
 
     <div class="content-scrollable list-items">
-      {{#if tentsReady}}
+      {{#if itemsReady}}
         {{#with _id}} {{! Establish new data context with only the '_id'
                           field. This way, when the 'incompleteCount' field
                           changes, we don't re-render the list contents }}
-          {{#each tents this}}
-            {{> tentsItem}}
+          {{#each items this}}
+            {{> Items}}
           {{else}}
             <div class="wrapper-message">
               <div class="title-message">No items here yet</div>
@@ -67,7 +67,7 @@
         {{/with}}
       {{else}}
           <div class="wrapper-message">
-            <div class="title-message">Loading tents...</div>
+            <div class="title-message">Loading items...</div>
           </div>
       {{/if}}
     </div>

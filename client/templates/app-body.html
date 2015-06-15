@@ -21,18 +21,17 @@
           <a href="{{pathFor 'signin'}}" class="btn-secondary">Sign In</a>
           <a href="{{pathFor 'join'}}" class="btn-secondary">Join</a><br>
         </div>
-        <div class="btns-group">
-          <a href="{{pathFor 'addItem'}}" class="btn-secondary">Add Item</a>
-        </div>
       {{/if}}
-
-      <div class="list-tents">
+        <div class="btns-group">
+            <a href="{{pathFor 'addItem'}}" class="btn-secondary">Add Item</a>
+        </div>
+      <div class="list-items">
 
           <a href="{{pathFor 'itemList'}}" class="link-auth-alt">Test list</a><br>
         <a class="js-new-list link-list-new"><span class="icon-plus"></span>New List</a>
 
         {{#each lists}}
-          <a href="{{pathFor 'listsShow'}}" class="list-tent {{activeListClass}}" title="{{name}}">
+          <a href="{{pathFor 'listsShow'}}" class="list-item {{activeListClass}}" title="{{name}}">
             {{#if userId}}
               <span class="icon-lock"></span>
             {{/if}}

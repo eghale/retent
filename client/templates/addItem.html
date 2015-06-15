@@ -1,9 +1,9 @@
-<template name="oldinsertTentForm">
-  {{> quickForm collection="Tents" id="oldinsertTentForm" type="insert"}}
+<template name="oldinsertItemForm">
+  {{> quickForm collection="Items" id="oldinsertItemForm" type="insert"}}
 </template>
 
-<template name="insertTentForm">
-    {{#autoForm collection="Tents" id="insertTentForm" type="insert"}}
+<template name="insertItemForm">
+    {{#autoForm collection="Items" id="insertItemForm" type="insert"}}
         <fieldset>
             <div align="left">
             {{> afQuickField name='title'}} <br>
@@ -29,7 +29,7 @@
         <h1 class="title-auth">Add item</h1>
         <p class="subtitle-auth" >Add a tent, chair, gazebo, sunshade or something else entirely!</p>
 
-        {{> insertTentForm }}
+        {{> insertItemForm }}
 
        <!-- <form>
           {{#if errorMessages}}
