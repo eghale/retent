@@ -1,12 +1,9 @@
 <template name="itemList">
   <div class="page lists-show">
-      Items List
       <div class="content-scrollable list-items">
         {{#if itemsReady}}
-          {{#with _id}} {{! Establish new data context with only the '_id'
-                          field. This way, when the 'incompleteCount' field
-                          changes, we don't re-render the list contents }}
-            {{#each items this}}
+            {{#each items}}
+                An Item
               {{> item}}
             {{else}}
                 <div class="wrapper-message">
@@ -15,7 +12,6 @@
                     <div class="subtitle-message">Add new tents, chairs, sunshades or gazebos using the link above</div><br><br>
                 </div>
             {{/each}}
-          {{/with}}
         {{else}}
             <div class="wrapper-message">
                 <div class="title-message">Loading items...</div>

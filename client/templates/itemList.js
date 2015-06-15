@@ -8,7 +8,7 @@ Template.itemList.helpers ({
     },
 
     itemsReady: function() {
-        return true;
-        //return Router.current().itemsHandle.ready();
+        //return true;
+        return Router.current().itemsHandle.ready();
     }
 });
