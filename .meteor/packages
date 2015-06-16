@@ -11,3 +11,4 @@ iron:router@0.9.4
 accounts-password
 aldeed:autoform
 aldeed:collection2
+mdg:camera

@@ -7,7 +7,10 @@ AutoForm.hooks({
             return false;
         },
         onSuccess: function(insert, result) {
-            Router.go('itemList');
+            console.log(insert,result);
+            //Then I want to put the id from the 'insert, result'
+            // part through the itemPhoto (put it in the brackets next to it)
+            Router.go('itemPhoto');
         }
     }
 });

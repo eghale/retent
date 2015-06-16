@@ -1,15 +1,15 @@
 var EDITING_KEY = 'EDITING_ITEM_ID';
 
-Template.items.helpers({
-  checkedClass: function() {
-    return this.checked && 'checked';
-  },
-  editingClass: function() {
-    return Session.equals(EDITING_KEY, this._id) && 'editing';
-  }
-});
+//Template.items.helpers({
+  //checkedClass: function() {
+    //return this.checked && 'checked';
+  //},
+  //editingClass: function() {
+    //return Session.equals(EDITING_KEY, this._id) && 'editing';
+  //}
+//});
 
-Template.items.events({
+Template.item.events({
   'change [type=checkbox]': function(event) {
     var checked = $(event.target).is(':checked');
     Items.update(this._id, {$set: {checked: checked}});
