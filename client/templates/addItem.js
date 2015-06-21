@@ -1,3 +1,8 @@
+Template.addItem.helpers({
+    getRouteContext: function(){
+        return result;
+    }
+});
 
 AutoForm.hooks({
     insertItemForm: {
@@ -6,11 +11,15 @@ AutoForm.hooks({
             this.done();
             return false;
         },
-        onSuccess: function(insert, result) {
-            console.log(insert,result);
-            //Then I want to put the id from the 'insert, result'
-            // part through the itemPhoto (put it in the brackets next to it)
+        onSuccess: function(verb, result) {
+            console.log(verb, result);
+            var user = Meteor.user();
+            Meteor.users.update({_id: user._id}, {$set: {currentItem: result}});
+            //Items.findOne({_id: "aZfWGWkzHnimHKZMu"})
             Router.go('itemPhoto');
+        },
+        onError: function(insert, error) {
+            console.log(insert, error);
         }
     }
 });

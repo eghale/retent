@@ -16,6 +16,16 @@ Meteor.publish('items', function() {
   return Items.find();
 });
 
+Meteor.publish("userData", function () {
+  if (this.userId) {
+    return Meteor.users.find({_id: this.userId},
+        {fields: {'currentItem': 1}});
+  } else {
+    this.ready();
+  }
+});
+
+//Meteor.publish('users' fun)
 /*
 Meteor.publish('tents', function(listId) {
   check(listId, String);

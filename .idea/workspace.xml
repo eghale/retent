@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2825371c-5a90-4230-bd71-2fac8b1b396a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/itemPhoto.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/itemPhoto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/itemQr.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/addItem.js" afterPath="$PROJECT_DIR$/client/templates/addItem.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collections.js" afterPath="$PROJECT_DIR$/lib/collections.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/item.js" afterPath="$PROJECT_DIR$/client/templates/item.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/itemList.html" afterPath="$PROJECT_DIR$/client/templates/itemList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/itemPhoto.js" afterPath="$PROJECT_DIR$/client/templates/itemPhoto.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/router.js" afterPath="$PROJECT_DIR$/lib/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publish.js" afterPath="$PROJECT_DIR$/server/publish.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -37,41 +35,11 @@
     <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="addItem.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/templates/addItem.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.06551724" vertical-offset="0" max-vertical-offset="418">
-                  <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="itemPhoto.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/templates/itemPhoto.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="475">
-                  <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app-body.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/templates/app-body.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1349" max-vertical-offset="2546">
-                  <caret line="99" column="3" selection-start-line="99" selection-start-column="3" selection-end-line="99" selection-end-column="3" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/router.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-24.846153" vertical-offset="228" max-vertical-offset="1767">
-                  <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="513">
+                  <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -92,18 +60,28 @@
           <file leaf-file-name="item.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/templates/item.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-13.153846" vertical-offset="0" max-vertical-offset="1045">
+                <state vertical-scroll-proportion="9.5" vertical-offset="589" max-vertical-offset="1045">
                   <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="bootstrap.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server/bootstrap.js">
+          <file leaf-file-name="itemQr.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/templates/itemQr.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="874">
-                  <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="290">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="addItem.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/templates/addItem.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="589">
+                  <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -112,8 +90,18 @@
           <file leaf-file-name="collections.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/collections.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="812" max-vertical-offset="1102">
-                  <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="546" max-vertical-offset="1349">
+                  <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="publish.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/publish.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="779">
+                  <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -123,11 +111,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="addItem.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="addItem.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/templates/addItem.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="8.796296" vertical-offset="969" max-vertical-offset="1235">
-                  <caret line="26" column="27" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="27" />
+                <state vertical-scroll-proportion="0.4935065" vertical-offset="95" max-vertical-offset="1235">
+                  <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -153,11 +141,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="itemPhoto.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="itemPhoto.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/templates/itemPhoto.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.14785992" vertical-offset="0" max-vertical-offset="257">
-                  <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+                <state vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="171">
+                  <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -196,8 +184,6 @@
         <option value="$PROJECT_DIR$/client/templates/auth-signin.html" />
         <option value="$USER_HOME$/Documents/AnimalAid/presentation/PressureGroups.html" />
         <option value="$USER_HOME$/Documents/AnimalAid/presentation/css/animal_aid.css" />
-        <option value="$PROJECT_DIR$/server/publish.js" />
-        <option value="$PROJECT_DIR$/client/templates/addItem.html" />
         <option value="$PROJECT_DIR$/client/templates/items.js" />
         <option value="$PROJECT_DIR$/client/templates/lists-show.js" />
         <option value="$PROJECT_DIR$/server/bootstrap.js" />
@@ -209,15 +195,18 @@
         <option value="$PROJECT_DIR$/client/templates/items.html" />
         <option value="$PROJECT_DIR$/client/templates/item.html" />
         <option value="$PROJECT_DIR$/client/templates/itemList.js" />
-        <option value="$PROJECT_DIR$/lib/collections.js" />
         <option value="$PROJECT_DIR$/client/templates/itemList.html" />
         <option value="$PROJECT_DIR$/client/templates/item.js" />
         <option value="$PROJECT_DIR$/client/templates/photo.js" />
         <option value="$PROJECT_DIR$/client/templates/camera.js" />
         <option value="$PROJECT_DIR$/client/templates/camera.html" />
         <option value="$PROJECT_DIR$/lib/router.js" />
-        <option value="$PROJECT_DIR$/client/templates/itemPhoto.js" />
+        <option value="$PROJECT_DIR$/client/templates/addItem.html" />
+        <option value="$PROJECT_DIR$/server/publish.js" />
         <option value="$PROJECT_DIR$/client/templates/addItem.js" />
+        <option value="$PROJECT_DIR$/lib/collections.js" />
+        <option value="$PROJECT_DIR$/client/templates/itemPhoto.js" />
+        <option value="$PROJECT_DIR$/client/templates/itemQr.js" />
       </list>
     </option>
   </component>
@@ -225,7 +214,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="251" />
+    <option name="x" value="157" />
     <option name="y" value="22" />
     <option name="width" value="1074" />
     <option name="height" value="731" />
@@ -470,7 +459,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="251" y="22" width="1074" height="731" extended-state="0" />
+    <frame x="157" y="22" width="1074" height="731" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -514,14 +503,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/templates/app-not-found.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/app-not-found.import.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
@@ -794,14 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/publish.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7924528" vertical-offset="0" max-vertical-offset="589">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/lists-show.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06666667" vertical-offset="665" max-vertical-offset="3477">
@@ -842,26 +815,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="874">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.846153" vertical-offset="228" max-vertical-offset="1767">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publish.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="779">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/app-body.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="2546">
+        <state vertical-scroll-proportion="6.486207" vertical-offset="0" max-vertical-offset="2546">
           <caret line="99" column="3" selection-start-line="99" selection-start-column="3" selection-end-line="99" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="9.5" vertical-offset="589" max-vertical-offset="1045">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/collections.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="779" max-vertical-offset="1102">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="874">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="546" max-vertical-offset="1349">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -876,50 +873,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/addItem.html">
+    <entry file="file://$PROJECT_DIR$/client/templates/addItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.796296" vertical-offset="969" max-vertical-offset="1235">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/itemPhoto.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14785992" vertical-offset="0" max-vertical-offset="257">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/item.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.153846" vertical-offset="0" max-vertical-offset="1045">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.846153" vertical-offset="228" max-vertical-offset="1767">
-          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="589">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/itemPhoto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="475">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="513">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/addItem.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/itemPhoto.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06551724" vertical-offset="0" max-vertical-offset="418">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        <state vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="171">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/addItem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4935065" vertical-offset="95" max-vertical-offset="1235">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/itemQr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

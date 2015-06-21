@@ -9,11 +9,13 @@ Template.itemPhoto.events({
             quality: 70
         };
         MeteorCamera.getPicture(cameraOptions, function(error, data){
+            console.log('image data', data);
             if (!error) {
                 template.$('.photo').attr('src', data);
             }
+            //var item = Items.findOne({_id: Meteor.user().currentItem})
+            Items.update({_id: Meteor.user().currentItem}, {$set: {photo: data}});
         });
         event.preventDefault();
     }
 })
-
