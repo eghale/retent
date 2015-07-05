@@ -3,8 +3,8 @@
  */
 Template.itemList.helpers ({
 
-    items: function () {
-        return Items.find({}, {sort: {createdAt: -1}});
+    items: function(listId) {
+        return Items.find({listId: listId}, {sort: {createdAt: -1}});
     },
 
     itemsReady: function() {

@@ -15,6 +15,7 @@ Template.itemPhoto.events({
             }
             //var item = Items.findOne({_id: Meteor.user().currentItem})
             Items.update({_id: Meteor.user().currentItem}, {$set: {photo: data}});
+            Router.go('itemQr');
         });
         event.preventDefault();
     }
