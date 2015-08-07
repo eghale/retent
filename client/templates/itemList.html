@@ -1,6 +1,14 @@
 <template name="itemList">
   <div class="page lists-show">
       <table class="item-list content-scrollable table table-striped table-responsive">
+          <thead>
+            <tr>
+                <th>Item type</th>
+                <th>Colour</th>
+                <th>Capacity</th>
+                <th>Dirt or damage</th>
+            </tr>
+          </thead>
           <tbody>
             {{#if itemsReady}}
                 {{#each items}}
