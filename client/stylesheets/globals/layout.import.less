@@ -1,4 +1,4 @@
-@menu-width: 270px;
+@menu-width: 260px;
 @column: 5.55555%;
 
 body {
@@ -17,7 +17,7 @@ body {
     right: @column;
   }
 
-  @media screen and (min-width: 80em) {
+  @media screen and (min-width: 200em) {
     left: 2*@column;
     right: 2*@column;
   }
@@ -44,6 +44,7 @@ body {
   .content-scrollable {
     .position(absolute, 0, 0, 0, 0);
     .transform(translate3d(0, 0, 0));
+    width: 100%;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }

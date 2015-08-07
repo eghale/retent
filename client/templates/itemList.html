@@ -1,23 +1,24 @@
 <template name="itemList">
   <div class="page lists-show">
-      <div class="content-scrollable list-items">
-        {{#if itemsReady}}
-            {{#each items}}
-                Item
-              {{> item}}
+      <table class="item-list content-scrollable table table-striped table-responsive">
+          <tbody>
+            {{#if itemsReady}}
+                {{#each items}}
+                  {{> item}}
+                {{else}}
+                    <div class="wrapper-message">
+                        <div class="title-message">No items here yet</div>
+                        <a href="{{pathFor 'addItem'}}">Add an item</a>
+                        <div class="subtitle-message">Add new tents, chairs, sunshades or gazebos using the link above</div><br><br>
+                    </div>
+                {{/each}}
             {{else}}
                 <div class="wrapper-message">
-                    <div class="title-message">No items here yet</div>
-                    <a href="{{pathFor 'addItem'}}">Add an item</a>
-                    <div class="subtitle-message">Add new tents, chairs, sunshades or gazebos using the link above</div><br><br>
+                    <div class="title-message">Loading items...</div>
                 </div>
-            {{/each}}
-        {{else}}
-            <div class="wrapper-message">
-                <div class="title-message">Loading items...</div>
-            </div>
-        {{/if}}
-      </div>
+            {{/if}}
+          </tbody>
+      </table>
 
   </div>
 </template>

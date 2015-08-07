@@ -4,7 +4,7 @@
 Template.itemList.helpers ({
 
     items: function(listId) {
-        return Items.find({listId: listId}, {sort: {createdAt: -1}});
+        return Items.find({listId: listId}, {sort: {createdAt: 1}});
     },
 
     itemsReady: function() {

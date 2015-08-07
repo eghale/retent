@@ -1,14 +1,9 @@
 <template name="item">
-  <div class="list-item {{checkedClass}} {{editingClass}}">
-    <label class="checkbox">
-      <input type="checkbox" checked="{{checked}}" name="checked">
-      <span class="checkbox-custom"></span>
-    </label>
-
-    <input type="text" value="{{title}}" placeholder="Title">
-    <input type="text" value="{{colour}}" placeholder="Colour">
-    <input type="number" value="{{capacity}}" placeholder="Capacity">
-      <input type="text" value="{{damage}}" placeholder="Dirt or damage">
+    <tr>
+      <td><input type="text" value="{{title}}" placeholder="Title"></td>
+      <td><input type="text" value="{{colour}}" placeholder="Colour"></td>
+      <td><input type="text" value="{{capacity}}" placeholder="Capacity"></td>
+      <td><input type="text" value="{{damage}}" placeholder="Dirt or damage"></td>
+    </tr>
     <a class="js-delete-item delete-item" href="#"><span class="icon-trash"></span></a>
-  </div>
 </template>
